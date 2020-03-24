@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+	<head>
+		<title>日在广工(gdutday[]~(￣▽￣)~*)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<noscript>
+			<link rel="stylesheet" href="./assets/css/noscript.css" />
+		</noscript>
+	</head>
+
+	<body class="is-preload">
+		<!-- modal -->
+		<div id="modal-mask" style="display: none;z-index: 3000;position: fixed;top: 0;left: 0;bottom: 0;right: 0; background-color: rgba(0,0,0,.3);">
+			<div id="modal-contain" style="overflow-y: auto;padding: 20px;border-radius: 4px;height: 450px;width: 700px;background-color: white;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);">
+				<table id="modal-table" border="" cellspacing="" cellpadding="">
+				</table>
+				<!-- examTime: "2018秋季"
+			examPole: "2.7"
+			examScore: "77"
+			examName: "大学生心理健康教育"
+			readMethod: "必修"
+			credit: "1.5"
+			classType: "公共基础课"
+			examType: "正常考试" -->
+			</div>
+		</div>
+		<!-- Header -->
+		<section id="header">
+			<div class="inner">
+				<span class="icon solid major fa-cloud"></span>
+				<h1>你好,<strong>User</strong><br />
+					这里是日在广工开发者.</h1>
+				<p>gdutday/日在广工<br />
+					感谢你的使用.<br />这是后台写的前端,不要在意好不好看了</p>
+				<ul class="actions special">
+					<li><a href="#one" class="button scrolly">快速入门</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- One -->
+		<section id="one" class="main style1">
+			<div class="container">
+				<div class="row gtr-150">
+					<div class="col-6 col-12-medium">
+						<header class="major">
+							<h2>已开发完成的 接口</h2>
+						</header>
+						<p><a href="#class" class="button scrolly">获取课表</a>
+							<a href="#grade" class="button scrolly">获取成绩</a><br />
+							<a href="#campus" class="button scrolly">获取校区</a>
+							<a href="#exam" class="button scrolly">获取考试</a><br />
+							<a href="#all" class="button scrolly">获取全部</a>
+							<a href="#extra" class="button scrolly">无限可能</a></p>
+					</div>
+					<div class="col-6 col-12-medium imp-medium">
+						<span class="image fit" ><img src="http://img.cerbur.top/api03.jpg" width="200" alt=""  /></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- class -->
+		<section id="class" class="main style2">
+			<div class="container">
+				<div class="row gtr-150">
+					<div class="col-6 col-12-medium">
+						<ul class="major-icons">
+							<li><span class="icon solid style1 major fa-code"></span></li>
+							<!-- <li><span class="icon solid style2 major fa-bolt"></span></li> -->
+							<!-- <li><span class="icon solid style3 major fa-camera-retro"></span></li> -->
+							<!-- <li><span class="icon solid style4 major fa-cog"></span></li> -->
+							<!-- <li><span class="icon solid style5 major fa-desktop"></span></li> -->
+							<!-- <li><span class="icon solid style6 major fa-calendar"></span></li> -->
+						</ul>
+					</div>
+					<div class="col-6 col-12-medium">
+						<header class="major">
+							<h2>获取课表</h2>
+						</header>
+						<p>提交方式:[POST]<br />
+							param: schoolId(string), password(string)<br />
+							return: url
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- grade -->
+		<section id="grade" class="main style2">
+			<div class="container">
+				<div class="row gtr-150">
+					<div class="col-6 col-12-medium">
+						<header class="major">
+							<h2>获取成绩</h2>
+						</header>
+						<p>
+							<form id="gradeForm" action="https://gdutdayapitest.cerbur.top/crawler/grade" method="POST">
+								<p>
+									学号: <input type="text" name="schoolId">
+								</p>
+								<p>
+									密码: <input type="password" name="password">
+								</p>
+								<p>
+									<!-- <button id="gradeButton">提交</button> -->
+									<input type="submit" value="提交">
+								</p>
+							</form>
+						</p>
+					</div>
+					<div class="col-6 col-12-medium">
+						<ul class="major-icons">
+							<!-- <li><span class="icon solid style1 major fa-code"></span></li> -->
+							<li><span class="icon solid style2 major fa-bolt"></span></li>
+							<!-- <li><span class="icon solid style3 major fa-camera-retro"></span></li> -->
+							<!-- <li><span class="icon solid style4 major fa-cog"></span></li> -->
+							<!-- <li><span class="icon solid style5 major fa-desktop"></span></li> -->
+							<!-- <li><span class="icon solid style6 major fa-calendar"></span></li> -->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- class -->
+		<section id="campus" class="main style2">
+			<div class="container">
+				<div class="row gtr-150">
+					<div class="col-6 col-12-medium">
+						<ul class="major-icons">
+							<!-- <li><span class="icon solid style1 major fa-code"></span></li> -->
+							<!-- <li><span class="icon solid style2 major fa-bolt"></span></li> -->
+							<li><span class="icon solid style3 major fa-camera-retro"></span></li>
+							<!-- <li><span class="icon solid style4 major fa-cog"></span></li> -->
+							<!-- <li><span class="icon solid style5 major fa-desktop"></span></li> -->
+							<!-- <li><span class="icon solid style6 major fa-calendar"></span></li> -->
+						</ul>
+					</div>
+					<div class="col-6 col-12-medium">
+						<header class="major">
+							<h2>获取校区</h2>
+						</header>
+						<p>提交方式:[POST]<br />
+							param: schoolId(string), password(string)<br />
+							return: url
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- exam -->
+		<section id="exam" class="main style2">
+			<div class="container">
+				<div class="row gtr-150">
+					<div class="col-6 col-12-medium">
+						<header class="major">
+							<h2>获取考试</h2>
+						</header>
+						<p>提交方式:[POST]<br />
+							param: schoolId(string), password(string)<br />
+							return: url
+						</p>
+					</div>
+					<div class="col-6 col-12-medium">
+						<ul class="major-icons">
+							<!-- <li><span class="icon solid style1 major fa-code"></span></li> -->
+							<!-- <li><span class="icon solid style2 major fa-bolt"></span></li> -->
+							<!-- <li><span class="icon solid style3 major fa-camera-retro"></span></li> -->
+							<!-- <li><span class="icon solid style4 major fa-cog"></span></li> -->
+							<!-- <li><span class="icon solid style5 major fa-desktop"></span></li> -->
+							<li><span class="icon solid style6 major fa-calendar"></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- all -->
+		<section id="all" class="main style2">
+			<div class="container">
+				<div class="row gtr-150">
+					<div class="col-6 col-12-medium">
+						<ul class="major-icons">
+							<!-- <li><span class="icon solid style1 major fa-code"></span></li> -->
+							<!-- <li><span class="icon solid style2 major fa-bolt"></span></li> -->
+							<!-- <li><span class="icon solid style3 major fa-camera-retro"></span></li> -->
+							<!-- <li><span class="icon solid style4 major fa-cog"></span></li> -->
+							<!-- <li><span class="icon solid style5 major fa-desktop"></span></li> -->
+							<li><span class="icon solid style6 major fa-calendar"></span></li>
+						</ul>
+					</div>
+					<div class="col-6 col-12-medium">
+						<header class="major">
+							<h2>获取全部</h2>
+						</header>
+						<p>提交方式:[POST]<br />
+							param: schoolId(string), password(string)<br />
+							return: url
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- extra -->
+		<section id="extra" class="main style2 special">
+			<div class="container">
+				<header class="major">
+					<h2>有兴趣加入开发吗?</h2>
+				</header>
+				<p>查看本项目的GitHub,repo里面有加入我们的方式.</p>
+				<ul class="actions special">
+					<li><a target="view_window" href="https://github.com/Cerbur/GDUT-Education-System-Crawler" class="button wide primary">GitHub</a></li>
+				</ul>
+			</div>
+		</section>
+
+
+		<!-- Footer -->
+		<section id="footer">
+			<ul class="icons">
+				<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+				<!-- <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+				<!-- <li><a target="view_window" href="#" class="icon brands alt fa-instagram"><span
+						class="label">Instagram</span></a></li> -->
+				<li><a target="view_window" href="https://github.com/gdutday" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+				<!-- <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
+			</ul>
+			<ul class="copyright">
+				<li>&copy; 日在广工</li>
+				<li>Design: <a target="view_window" href="https://github.com/gdutday">Cerbur</a></li>
+				<br />
+				<a href="http://beian.miit.gov.cn/" target="_blank" data-spm-anchor-id="5176.8208715.7y9jhqsfz.110">粤ICP备19125384号</a>
+			</ul>
+		</section>
+
+		<!-- Scripts -->
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+		<script src="./assets/js/jquery.scrolly.min.js"></script>
+		<script src="./assets/js/browser.min.js"></script>
+		<script src="./assets/js/breakpoints.min.js"></script>
+		<script src="./assets/js/util.js"></script>
+		<script src="./assets/js/main.js"></script>
+		<script src="https://cdn.bootcss.com/jquery.form/4.2.2/jquery.form.js"></script>
+		<script type="text/javascript">
+			const table = document.querySelector('#modal-table');
+			const modal = document.querySelector('#modal-mask')
+			modal.onclick = function(){
+				this.style.display = 'none';
+			}
+			const modalContain = document.querySelector('#modal-contain');
+			modalContain.onclick = function(e){
+				e.stopPropagation();
+			}
+			$('#gradeForm').ajaxForm({
+				beforeSerialize: function() {
+					$("[type=submit]").attr('disabled', true);
+				},
+				async: true,
+				timeout: 5000,
+				dataType:'text',
+				// success: function(data) {
+				// 	console.log(data);
+				// 	const pre = `<tr>
+				// 		<th>考试科目</th>
+				// 		<th>绩点</th>
+				// 		<th>考试成绩</th>
+				// 		<th>课程类型</th>
+				// 		<th>考试类型</th>
+				// 		<th>选修/必修</th>
+				// 		<th>考试时间</th>
+				// 	</tr>`
+				// 	const content = data.map(item => {
+				// 		`<tr>
+				// 		<td>${ item.examName }</td>
+				// 		<td>${ item.examPole }</td>
+				// 		<td>${ item.examScore }</td>
+				// 		<td>${ item.classType }</td>
+				// 		<td>${ item.examType }</td>
+				// 		<td>${ item.readMethod }</td>
+				// 		<td>${ item.examTime }</td>
+				// 		</tr>
+				// 		`
+				// 	}).join("")
+				// 	table.innerHTML =  pre + content;
+				// 	table.style.display = 'block';
+				// },
+				// error: function(data) {
+				// 	var dataObj = data.responseText;
+				// 	if (dataObj.error != 1) {
+				// 		console.log(data);
+				// 	} else {
+				// 		console.log(dataObj.data);
+				// 	}
+				// },
+				complete: function(data) {
+					$("[type=submit]").attr('disabled', false);
+						// data = JSON.parse(data.responseText).data;
+						json = JSON.parse(data.responseText);
+						data = json.data
+						if (json.error != 1) {
+							alert(json.msg);
+						} else {
+							const pre = `<tr>
+								<th>考试科目</th>
+								<th>绩点</th>
+								<th>考试成绩</th>
+								<th>课程类型</th>
+								<th>考试类型</th>
+								<th>选修/必修</th>
+								<th>考试时间</th>
+							</tr>`
+							const content = data.map(item => {
+								return `<tr>
+								<td>${ item.examName }</td>
+								<td>${ item.examPole }</td>
+								<td>${ item.examScore }</td>
+								<td>${ item.classType }</td>
+								<td>${ item.examType }</td>
+								<td>${ item.readMethod }</td>
+								<td>${ item.examTime }</td>
+								</tr>
+								`
+							}).join('');
+							table.innerHTML =  pre + content;
+							modal.style.display = 'block';
+						}
+				},
+				dataType: 'application/x-www-form-urlencoded',
+				type: 'post'
+			});
+		</script>
+	</body>
+
+</html>
